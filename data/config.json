@@ -1,0 +1,12 @@
+{
+    "SCOPES": ["https://www.googleapis.com/auth/calendar"],
+    "CREDENTIALS_FILE": "credentials.json",
+    "TOKEN_FILE": "token.pickle",
+    "TIMEZONE": "Asia/Taipei",
+    "DEFAULT_CALENDAR_ID": "",
+    "ICS_URL": "",
+    "OUTPUT_JSON_FILE": "events.json",
+    "LOG_FILE": "application.log",
+    "LOG_LEVEL": "INFO"
+}
+  

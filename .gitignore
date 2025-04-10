@@ -1,0 +1,37 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Credentials and tokens
+credentials.json
+token.pickle
+
+# Output files
+*.ics
+data/last_synced_*.json
+# 忽略憑證檔案
+data/credentials.json
+data/token.pickle
+
+# 忽略日曆事件輸出檔案
+data/events.json
+
+# 忽略日誌檔案
+data/application.log
+
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
