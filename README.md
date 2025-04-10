@@ -72,7 +72,7 @@ python run_script.py
 在專案目錄中執行以下指令：
 
 ```bash
-docker build -t itri_calendar .
+docker build -t ics_to_google_calendar .
 ```
 
 ### 2. 執行容器 (可搭配 crontab 排程執行)
