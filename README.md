@@ -4,14 +4,23 @@
 
 ```
 ics_to_google_calendar/
+├── app/                   # 核心應用程式邏輯
+│   ├── config.py          # 專案設定檔
+│   ├── main.py            # Google Calendar 同步邏輯
+│   ├── parse_ics2json.py  # 下載並轉換 ICS 檔案為 JSON
+│   └── run_script.py      # 執行腳本
+├── data/                  # 資料與憑證檔案
+│   ├── application.log    # 執行日誌檔案
+│   ├── config.json        # 使用者設定檔
+│   ├── credentials.json   # Google API 憑證檔案
+│   ├── debug_calendar.ics # 測試用的 ICS 檔案
+│   ├── events.json        # 轉換後的 JSON 格式行事曆資料
+│   ├── last_synced_*.json # 上次同步的狀態檔案
+│   └── token.pickle       # Google API 驗證 Token
 ├── Dockerfile             # Docker 設定
 ├── README.md              # 專案說明文件
-├── config.py              # 專案設定檔
-├── events.json            # 轉換後的 JSON 格式行事曆資料
-├── main.py                # Google Calendar 同步邏輯
-├── parse_ics2json.py      # 下載並轉換 ICS 檔案為 JSON
 ├── requirements.txt       # 相關套件
-└── application.log        # 執行日誌檔案
+└── screenshot/            # 截圖資源
 ```
 ## 1. 設定 Google API 認證
 在使用前，你需要設定 Google API 認證：
