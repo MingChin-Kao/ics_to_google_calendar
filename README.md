@@ -18,6 +18,7 @@ ics_to_google_calendar/
 
 - 前往 Google Cloud Console (https://console.cloud.google.com/welcome/new)
 - 建立一個專案並啟用 Google Calendar API
+
 ![CleanShot 2025-04-10 at 22.53.50.png](screenshot/CleanShot_2025-04-10_at_22.53.50.png)
 
 ![CleanShot 2025-04-10 at 22.55.22.png](screenshot/CleanShot_2025-04-10_at_22.55.22.png)
@@ -31,11 +32,13 @@ ics_to_google_calendar/
 ![CleanShot 2025-04-10 at 22.59.21.png](screenshot/CleanShot_2025-04-10_at_22.59.21.png)
 
 - 建立 OAuth 憑證，選擇桌面應用程式類型
+
 ![CleanShot 2025-04-10 at 23.00.55.png](screenshot/CleanShot_2025-04-10_at_23.00.55.png)
 
 ![CleanShot 2025-04-10 at 23.03.06.png](screenshot/CleanShot_2025-04-10_at_23.03.06.png)
 
 - 下載憑證檔案並重命名為 credentials.json，放在 data 資料夾下
+
 ![CleanShot 2025-04-10 at 23.03.33.png](screenshot/CleanShot_2025-04-10_at_23.03.33.png)
 
 ## 2. 設定檔案
@@ -63,7 +66,7 @@ python run_script.py
 docker build -t itri_calendar .
 ```
 
-### 2. 執行容器
+### 2. 執行容器 (可搭配 crontab 排程執行)
 
 ```bash
 docker run --rm -v $PWD/data:/app/data ics_to_google_calendar
